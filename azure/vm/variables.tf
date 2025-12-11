@@ -54,7 +54,7 @@ variable "subnet_address_prefixes" {
 variable "allowed_ssh_source_ips" {
   description = "Source IP addresses allowed to SSH"
   type        = list(string)
-  default     = ["*"]
+  default     = ["0.0.0.0/0"]
 }
 
 variable "tags" {
